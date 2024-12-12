@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Semântico em JavaScript</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <script src="./js/script.js"></script>
+</head>
+<body>
+  <main class="quiz-container">
+    <header>
+      <h1>Quiz Semântico em JavaScript</h1>
+    </header>
+    <section id="quiz">
+      <form>
+        <fieldset>
+          <legend>1. Qual é a linguagem usada para estilizar páginas web?</legend>
+          <ul class="answers">
+            <li><label><input type="radio" name="q1" value="a"> JavaScript</label></li>
+            <li><label><input type="radio" name="q1" value="b"> HTML</label></li>
+            <li><label><input type="radio" name="q1" value="c"> CSS</label></li>
+            <li><label><input type="radio" name="q1" value="d"> Python</label></li>
+          </ul>
+        </fieldset>
+ 
+        <fieldset>
+          <legend>2. Qual tag é usada para criar um link em HTML?</legend>
+          <ul class="answers">
+            <li><label><input type="radio" name="q2" value="a"> &lt;div&gt;</label></li>
+            <li><label><input type="radio" name="q2" value="b"> &lt;a&gt;</label></li>
+            <li><label><input type="radio" name="q2" value="c"> &lt;link&gt;</label></li>
+            <li><label><input type="radio" name="q2" value="d"> &lt;p&gt;</label></li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>3. Qual é o resultado de 2 + 2 em JavaScript?</legend>
+          <ul class="answers">
+            <li><label><input type="radio" name="q3" value="a"> 3</label></li>
+            <li><label><input type="radio" name="q3" value="b"> 4</label></li>
+            <li><label><input type="radio" name="q3" value="c"> 22</label></li>
+            <li><label><input type="radio" name="q3" value="d"> NaN</label></li>
+          </ul>
+        </fieldset>
+        <button id="submit" type="button">Enviar Respostas</button>
+      </form>
+      <div id="result"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
