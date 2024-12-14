@@ -38,12 +38,12 @@ function checkAnswer(selectedOption) {
       feedback.textContent = "Resposta errada. Tente novamente!";
   }
   
-  // Mudar a pergunta após 2 segundos
+
   setTimeout(() => {
       currentQuestionIndex = (currentQuestionIndex + 1) % questions.length;
       loadQuestion();
   }, 2000);
 }
 
-// Inicia o quiz com a primeira pergunta
+
 loadQuestion();
