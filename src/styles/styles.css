@@ -1,14 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+  height: 100vh;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    line-height: 1.6;
+    background-color: #1282A2;
+    color: #FEFCFB;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
   }
   
   .quiz-container {
@@ -19,6 +25,61 @@ body {
     max-width: 500px;
     width: 100%;
   }
+
+  .menu-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    position: fixed;
+  }
+
+  .menu-home ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 15px;
+  }
+
+  .menu-home img{
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
+  }
+
+  .container-main-home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .container-main-home h1{
+    min-width: 200px;
+  }
+
+.container-main-icons-home{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  width: 250px;
+}
+
+.container-main-icons-home img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
   
   h1 {
     text-align: center;
