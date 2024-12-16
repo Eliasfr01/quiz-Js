@@ -1,56 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiz Semântico em JavaScript</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
-  <script src="./js/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dinâmico</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/script.js" defer></script> 
 </head>
 <body>
-  <main class="quiz-container">
-    <header>
-      <h1>Quiz Semântico em JavaScript</h1>
-    </header>
-    <section id="quiz">
-      <form>
-        <fieldset>
-          <legend>1. Qual é a linguagem usada para estilizar páginas web?</legend>
-          <ul class="answers">
-            <li><label><input type="radio" name="q1" value="a"> JavaScript</label></li>
-            <li><label><input type="radio" name="q1" value="b"> HTML</label></li>
-            <li><label><input type="radio" name="q1" value="c"> CSS</label></li>
-            <li><label><input type="radio" name="q1" value="d"> Python</label></li>
-          </ul>
-        </fieldset>
- 
-        <fieldset>
-          <legend>2. Qual tag é usada para criar um link em HTML?</legend>
-          <ul class="answers">
-            <li><label><input type="radio" name="q2" value="a"> &lt;div&gt;</label></li>
-            <li><label><input type="radio" name="q2" value="b"> &lt;a&gt;</label></li>
-            <li><label><input type="radio" name="q2" value="c"> &lt;link&gt;</label></li>
-            <li><label><input type="radio" name="q2" value="d"> &lt;p&gt;</label></li>
-          </ul>
-        </fieldset>
 
-        <fieldset>
-          <legend>3. Qual é o resultado de 2 + 2 em JavaScript?</legend>
-          <ul class="answers">
-            <li><label><input type="radio" name="q3" value="a"> 3</label></li>
-            <li><label><input type="radio" name="q3" value="b"> 4</label></li>
-            <li><label><input type="radio" name="q3" value="c"> 22</label></li>
-            <li><label><input type="radio" name="q3" value="d"> NaN</label></li>
-          </ul>
-        </fieldset>
-        <button id="submit" type="button">Enviar Respostas</button>
-      </form>
-      <div id="result"></div>
-    </section>
-  </main>
-  <script src="script.js"></script>
+    <main class="quiz-container">
+        <header>
+            <h1>Quiz</h1>
+        </header>
+
+        <section class="question-box">
+            <p id="question">Qual é a capital do Brasil?</p>
+        </section>
+
+        <section class="options">
+            <button class="option" onclick="checkAnswer('A')">A) Brasília</button>
+            <button class="option" onclick="checkAnswer('B')">B) São Paulo</button>
+            <button class="option" onclick="checkAnswer('C')">C) Rio de Janeiro</button>
+            <button class="option" onclick="checkAnswer('D')">D) Salvador</button>
+        </section>
+
+        <footer>
+            <div id="feedback"></div>
+        </footer>
+    </main>
+
 </body>
 </html>
