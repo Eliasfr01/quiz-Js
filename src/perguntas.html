@@ -4,14 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Dinâmico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
     <script src="./js/script.js" defer></script> 
 </head>
 <body>
 
-    <main class="quiz-container">
+    <main>
+    <div class="quiz-container">
+            <h3 id="num-question">01/10</h3>
         <header>
-            <h1>Quiz</h1>
+            <h1 id="Dificuldade">Quiz</h1>
         </header>
 
         <section class="question-box">
@@ -28,6 +33,7 @@
         <footer>
             <div id="feedback"></div>
         </footer>
+    </div>
     </main>
 
 </body>
