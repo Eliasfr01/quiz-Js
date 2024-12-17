@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Dinâmico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="./js/script.js" defer></script> 
+</head>
+<body>
+
+    <main>
+    <div class="quiz-container">
+            <h3 id="num-question">01/10</h3>
+        <header>
+            <h1 id="Dificuldade">Quiz</h1>
+        </header>
+
+        <section class="question-box">
+            <p id="question">Qual é a capital do Brasil?</p>
+        </section>
+
+        <section class="options">
+            <button class="option" onclick="checkAnswer('A')">A) Brasília</button>
+            <button class="option" onclick="checkAnswer('B')">B) São Paulo</button>
+            <button class="option" onclick="checkAnswer('C')">C) Rio de Janeiro</button>
+            <button class="option" onclick="checkAnswer('D')">D) Salvador</button>
+        </section>
+
+        <footer>
+            <div id="feedback"></div>
+        </footer>
+    </div>
+    </main>
+
+</body>
+</html>
