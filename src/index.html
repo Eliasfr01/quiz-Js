@@ -24,7 +24,7 @@
       </p>
     </div>
     <!-- Modal -->
-    <div
+    <!-- <div
       class="modal fade"
       id="exampleModalCenter"
       tabindex="-1"
@@ -68,14 +68,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <main>
+      <!-- 
+        ELEMENTOS DO MODAL PARA INSERIR NO BUTTON
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModalCenter"
+      -->
       <div class="container">
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModalCenter"
-        >
+        <button type="button" onclick="storeModuleAndRedirect('html')">
           <div class="card-options">
             <div class="content">
               <div class="imgBx"><img src="./media/html.png" alt="#" /></div>
@@ -89,11 +90,7 @@
             </div>
           </div>
         </button>
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModalCenter"
-        >
+        <button type="button" onclick="storeModuleAndRedirect('css')">
           <div class="card-options">
             <div class="content">
               <div class="imgBx"><img src="./media/css.png" alt="#" /></div>
@@ -107,11 +104,7 @@
             </div>
           </div>
         </button>
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModalCenter"
-        >
+        <button type="button" onclick="storeModuleAndRedirect('js')">
           <div class="card-options">
             <div class="content">
               <div class="imgBx"><img src="./media/js.png" alt="#" /></div>
@@ -137,5 +130,7 @@
     <script>
       AOS.init();
     </script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
