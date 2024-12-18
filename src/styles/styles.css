@@ -10,7 +10,7 @@ body {
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 100vh;
   background: #161623;
@@ -54,6 +54,7 @@ main::after {
   color: white;
   font-size: 25px;
   z-index: 1;
+  margin: 20px 0;
 }
 
 .container-text p {
@@ -73,7 +74,7 @@ main::after {
   align-items: center;
   flex-wrap: wrap;
   padding-top: 50px;
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 .card:hover {
