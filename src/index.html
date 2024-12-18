@@ -3,32 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Dinâmico</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./js/script.js" defer></script> 
+    <title>Quiz HTML, CSS, e JavaScript</title>
+    <style>
+        /* Estilos básicos para o modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #quiz-container {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
 
-    <main class="quiz-container">
-        <header>
-            <h1>Quiz</h1>
-        </header>
+    <!-- Modal de Seleção de Quiz -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button onclick="startQuiz('html')">Quiz de HTML</button>
+            <button onclick="startQuiz('css')">Quiz de CSS</button>
+            <button onclick="startQuiz('js')">Quiz de JavaScript</button>
+        </div>
+    </div>
 
-        <section class="question-box">
-            <p id="question">Qual é a capital do Brasil?</p>
-        </section>
+    <!-- Contêiner do Quiz -->
+    <div id="quiz-container" style="display: none;">
+        <h2 id="question">Pergunta</h2>
+        <p id="total-questions">Total de Perguntas: 0</p>
+        <p id="current-question">Pergunta 1 de 20</p>
+        <div id="options"></div>
+        <p id="feedback"></p>
+    </div>
 
-        <section class="options">
-            <button class="option" onclick="checkAnswer('A')">A) Brasília</button>
-            <button class="option" onclick="checkAnswer('B')">B) São Paulo</button>
-            <button class="option" onclick="checkAnswer('C')">C) Rio de Janeiro</button>
-            <button class="option" onclick="checkAnswer('D')">D) Salvador</button>
-        </section>
-
-        <footer>
-            <div id="feedback"></div>
-        </footer>
-    </main>
-
+    <script src="/src/js/script.js"></script> <!-- Incluindo o arquivo JS -->
 </body>
 </html>
