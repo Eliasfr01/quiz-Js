@@ -76,23 +76,21 @@
       data-bs-target="#exampleModalCenter"
       -->
       <div class="container">
-        <div id="moduleSelection">
-          <button type="button" onclick="startQuiz('html')">
-            <div class="card-options">
-              <div class="content">
-                <div class="imgBx"><img src="./media/html.png" alt="#" /></div>
-                <div class="contentBx">
-                  <h3>
-                    Quiz de HTML <br /><span>
-                      Teste seus conhecimentos em HTML</span
-                    >
-                  </h3>
-                </div>
+        <button type="button" onclick="storeModuleAndRedirect('html')">
+          <div class="card-options">
+            <div class="content">
+              <div class="imgBx"><img src="./media/html.png" alt="#" /></div>
+              <div class="contentBx">
+                <h3>
+                  Quiz de HTML <br /><span>
+                    Teste seus conhecimentos em HTML</span
+                  >
+                </h3>
               </div>
             </div>
-          </button>
-        </div>
-        <button type="button" onclick="startQuiz('css')">
+          </div>
+        </button>
+        <button type="button" onclick="storeModuleAndRedirect('css')">
           <div class="card-options">
             <div class="content">
               <div class="imgBx"><img src="./media/css.png" alt="#" /></div>
@@ -106,7 +104,7 @@
             </div>
           </div>
         </button>
-        <button type="button" onclick="startQuiz('js')">
+        <button type="button" onclick="storeModuleAndRedirect('js')">
           <div class="card-options">
             <div class="content">
               <div class="imgBx"><img src="./media/js.png" alt="#" /></div>
